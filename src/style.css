@@ -19,7 +19,9 @@ ul li {
 body {
     height: 100%;
     width: 100%;
-    background: url("./imgs/garage.jpeg") no-repeat top / cover;
+    background: url("./imgs/garage.jpeg") 50% 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .header {
@@ -62,11 +64,17 @@ button:hover, a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
     margin: 0 auto;
     gap: 50px;
 }
 
 .title {
     font-size: 20px;
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        width: 250px;
+    }
 }
